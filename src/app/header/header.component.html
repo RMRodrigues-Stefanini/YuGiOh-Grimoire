@@ -1,0 +1,29 @@
+<p   style= "text-align: center; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding-top: 0.5cm; padding-bottom: 0.5cm; text-shadow: cornsilk; background-color: #3c074dad; color:rgb(255, 255, 255); font-size:xx-large; font-weight: bolder;"> The Yu Gi Oh Grimoire <br> <img src="assets/dark grimoire.png" alt="grimoire"></p>
+
+<nav ngbNav #nav="ngbNav" class="nav-tabs">
+  <ng-container ngbNavItem>
+    <a ngbNavLink style=" color: #3c074dad; font-weight: bolder; padding-left: 0.5cm; padding-right: 0.5cm;">Cards</a>
+    <ng-template ngbNavContent>
+      <p style="text-align: center; color: #3c074dad; font-weight: bolder;"> Check our cards </p>
+      <head>
+          </head>
+      <app-body> </app-body>
+    </ng-template>
+  </ng-container>
+  <ng-container ngbNavItem>
+    <a ngbNavLink style=" color: #3c074dad; font-weight: bolder; padding-left: 0.5cm; padding-right: 0.5cm;">Strategies</a>
+    <ng-template ngbNavContent>
+      <p style="text-align: center; color: #3c074dad; font-weight: bolder; "> Make your opponent hp go to zero before yours. </p>
+      <app-strategies> </app-strategies>
+    </ng-template>
+  </ng-container>
+  <ng-container ngbNavItem>
+    <a ngbNavLink style=" color: #3c074dad; font-weight: bolder; padding-left: 0.5cm; padding-right: 0.5cm;">Contact Us</a>
+    <ng-template ngbNavContent>
+      <p style="text-align: center; color: #3c074dad; font-weight: bolder;"> Yell very loud!</p>
+      <app-contacts > </app-contacts>
+    </ng-template>
+  </ng-container>
+</nav>
+
+<div [ngbNavOutlet]="nav" class="mt-2"></div>
